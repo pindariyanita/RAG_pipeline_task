@@ -18,7 +18,7 @@ Here are the steps for setting project in local.
    Or you can paste below API endpoint into POSTMAN or by using curl
    {APP_URL}/api/query
    Method: POST
-   BODY (JSON): query = "What is durable medical equipment?"
+   BODY (JSON): query = "What includes in Original Medicare?"
 
 **Exmaple**
 
