@@ -1,0 +1,7 @@
+Django==4.2
+PyMuPDF
+sentence-transformers
+faiss-cpu
+transformers
+scikit-learn
+numpy
