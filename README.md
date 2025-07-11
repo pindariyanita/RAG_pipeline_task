@@ -15,16 +15,25 @@ Here are the steps for setting project in local.
    (`python manage.py runserver`)
 6) For API endpoint, please run the below command in new terminal while keeping above step command run in existing terminal
     (`python test_api.py`)
-   Or you can paste below API endpoint into POSTMAN or by using curl
-   {APP_URL}/api/query
-   Method: POST
-   BODY (JSON): query = "What includes in Original Medicare?"
+   
+   OR you can paste below API endpoint into POSTMAN
 
-**Exmaple**
+   API:- http://127.0.0.1:8000/api/query/
+   Method:- POST
+   Body (Select Raw):-
+   {
+     "query": "What includes in Original Medicare?"
+   }
 
-For Windows, Paste below command
-(`(Invoke-WebRequest -UseBasicParsing -Uri "http://127.0.0.1:8000/api/query/" -Method Post -ContentType "application/json" -Body '{ "query": "What includes in Original Medicare?" }').Content | ConvertFrom-Json | ConvertTo-Json`)
+   OR by using curl
+   (`(Invoke-WebRequest -UseBasicParsing -Uri "http://127.0.0.1:8000/api/query/" -Method Post -ContentType "application/json" -Body '{ "query": "What includes in Original Medicare?" }').Content | ConvertFrom-Json | ConvertTo-Json`)
+
 Here we can replace query with our prompt.
+
+**API Endpoint**
+
+http://127.0.0.1:8000/api/query
+
 
 **Features**
 
