@@ -23,7 +23,7 @@ Here are the steps for setting project in local.
 **Exmaple**
 
 For Windows, Paste below command
-(`(Invoke-WebRequest -UseBasicParsing -Uri "http://127.0.0.1:8000/api/query/" -Method Post -ContentType "application/json" -Body '{ **"query"**: "What includes in Original Medicare?" }').Content | ConvertFrom-Json | ConvertTo-Json`)
+(`(Invoke-WebRequest -UseBasicParsing -Uri "http://127.0.0.1:8000/api/query/" -Method Post -ContentType "application/json" -Body '{ "query": "What includes in Original Medicare?" }').Content | ConvertFrom-Json | ConvertTo-Json`)
 Here we can replace query with our prompt.
 
 **Features**
