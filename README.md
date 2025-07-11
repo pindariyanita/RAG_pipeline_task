@@ -13,7 +13,7 @@ Here are the steps for setting project in local.
    (`python manage.py migrate`)
 5) For starting Django project, please run
    (`python manage.py runserver`)
-6) For API endpoint, please run the below command in new terminal while keeping above step command run in existing terminal
+6) For testing, please run the below command in new terminal while keeping above step command run in existing terminal
     (`python test_api.py`)
    
    OR you can paste below API endpoint into POSTMAN
@@ -25,7 +25,7 @@ Here are the steps for setting project in local.
      "query": "What includes in Original Medicare?"
    }
 
-   OR by using curl
+   OR by using curl, Please use Invoke-WebRequest for Windows Powershell.
    (`(Invoke-WebRequest -UseBasicParsing -Uri "http://127.0.0.1:8000/api/query/" -Method Post -ContentType "application/json" -Body '{ "query": "What includes in Original Medicare?" }').Content | ConvertFrom-Json | ConvertTo-Json`)
 
 Here we can replace query with our prompt.
